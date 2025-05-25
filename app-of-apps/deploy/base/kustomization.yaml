@@ -1,3 +1,4 @@
 namespace: argocd
 
-resources: []
+resources:
+  - ./resources/cert-manager.yaml
