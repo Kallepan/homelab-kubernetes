@@ -4,5 +4,9 @@ kind: Kustomization
 namespace: istio-system
 
 resources:
+  - ./resources/istio-base.yaml
+  - ./resources/istio-cni.yaml
+  - ./resources/istio-ingressgateway.yaml
+  - ./resources/istiod.yaml
   - ./resources/namespace.yaml
   - ./resources/ztunnel.yaml
