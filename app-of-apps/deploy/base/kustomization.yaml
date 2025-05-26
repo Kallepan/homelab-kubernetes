@@ -8,3 +8,4 @@ resources:
   - ./resources/istio-ingressgateway.yaml
   - ./resources/core-infrastructure.yaml
   - ./resources/namespaces.yaml
+  - ./resources/kyverno.yaml
