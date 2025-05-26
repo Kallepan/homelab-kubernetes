@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: istio-cni
 spec:
-  project: default
+  project: istio
   source:
     chart: cni
     repoURL: https://istio-release.storage.googleapis.com/charts

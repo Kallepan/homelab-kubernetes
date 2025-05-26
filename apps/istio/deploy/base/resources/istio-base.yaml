@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: istio-base
 spec:
-  project: default
+  project: istio
   source:
     chart: base
     repoURL: https://istio-release.storage.googleapis.com/charts
