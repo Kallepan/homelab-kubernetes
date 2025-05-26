@@ -16,4 +16,4 @@ resources:
   - ./resources/namespaces.yaml
   - ./resources/openebs.yaml
   - ./resources/opentelemetry-operator.yaml
-
+  - ./resources/projects.yaml

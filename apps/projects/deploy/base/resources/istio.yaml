@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: istio
+spec:  
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  sourceNamespaces:
+    - istio-system
+  destinations:
+    - namespace: istio-system
+      server: 'https://kubernetes.default.svc'
