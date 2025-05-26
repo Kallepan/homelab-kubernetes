@@ -3,4 +3,5 @@ kind: Kustomization
 
 namespace: istio-system
 
-resources: []
+resources:
+  - ./resources/
