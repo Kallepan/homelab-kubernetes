@@ -13,13 +13,3 @@ spec:
   destinations:
     - namespace: observability
       server: 'https://kubernetes.default.svc'
-    - namespace: opentelemetry-operator
-      server: 'https://kubernetes.default.svc'
-    - namespace: jaeger-operator
-      server: 'https://kubernetes.default.svc'
-    - namespace: kiali-operator
-      server: 'https://kubernetes.default.svc'
-    - namespace: kube-system
-      server: 'https://kubernetes.default.svc'
-    - namespace: istio-system
-      server: 'https://kubernetes.default.svc'

@@ -2,8 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kiali-operator
-  annotations:
-    argocd.argoproj.io/sync-wave: "2"
+  namespace: observability
 spec:
   project: observability
   source:

@@ -4,7 +4,4 @@ kind: Kustomization
 namespace: observability
 
 resources:
-  - ./resources/jaeger-operator.yaml
-  - ./resources/kiali-operator.yaml
-  - ./resources/metrics-server.yaml
-  - ./resources/opentelemetry-operator.yaml
+  - ./resources/prometheus-blackbox-exporter.yaml

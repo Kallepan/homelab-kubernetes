@@ -8,10 +8,19 @@ spec:
       kind: '*'
   sourceNamespaces:
     - cert-manager
+    - observability
   sourceRepos:
     - '*'
   destinations:
     - namespace: cert-manager
       server: 'https://kubernetes.default.svc'
     - namespace: kube-system
+      server: 'https://kubernetes.default.svc'
+    - namespace: opentelemetry-operator
+      server: 'https://kubernetes.default.svc'
+    - namespace: jaeger-operator
+      server: 'https://kubernetes.default.svc'
+    - namespace: kiali-operator
+      server: 'https://kubernetes.default.svc'
+    - namespace: istio-system
       server: 'https://kubernetes.default.svc'
