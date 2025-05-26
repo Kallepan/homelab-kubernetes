@@ -9,3 +9,5 @@ resources:
   - ./resources/istio-ingressgateway.yaml
   - ./resources/istiod.yaml
   - ./resources/ztunnel.yaml
+  - resources/ingress-class.yaml
+  - resources/gateway-api.yaml

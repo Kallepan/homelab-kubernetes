@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: core-infrastructure
+  name: cilium
   annotations:
     argocd.argoproj.io/sync-wave: "0"
 spec:
@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: "https://github.com/Kallepan/homelab-kubernetes.git"
     targetRevision: main
-    path: apps/core-infrastructure/deploy/base
+    path: apps/cilium/deploy/base
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: kube-system
