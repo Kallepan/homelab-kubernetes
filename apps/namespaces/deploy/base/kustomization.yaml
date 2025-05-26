@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - ./resources/istio-system.yaml
   - ./resources/kyverno.yaml
+  - ./resources/openebs.yaml

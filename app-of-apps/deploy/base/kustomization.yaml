@@ -3,11 +3,13 @@ namespace: argocd
 resources:
   - ./resources/cert-manager.yaml
   - ./resources/certificates.yaml
-  - ./resources/istio-base.yaml
-  - ./resources/istiod.yaml
-  - ./resources/istio-cni.yaml
-  - ./resources/ztunnel.yaml
-  - ./resources/istio-ingressgateway.yaml
   - ./resources/core-infrastructure.yaml
-  - ./resources/namespaces.yaml
+  - ./resources/istio-base.yaml
+  - ./resources/istio-cni.yaml
+  - ./resources/istio-ingressgateway.yaml
+  - ./resources/istiod.yaml
   - ./resources/kyverno.yaml
+  - ./resources/metrics-server.yaml
+  - ./resources/namespaces.yaml
+  - ./resources/openebs.yaml
+  - ./resources/ztunnel.yaml
