@@ -13,6 +13,7 @@ spec:
     helm:
       releaseName: istio
       valuesObject:
+        profile: ambient
         meshID: "infrastructure-cluster-mesh"
         meshConfig:
           extensionProviders:
