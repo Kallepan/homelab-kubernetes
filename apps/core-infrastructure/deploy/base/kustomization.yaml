@@ -9,3 +9,4 @@ resources:
   - resources/cilium-load-balancer-ip-pool.yaml
   - resources/ingress-class.yaml
   - resources/cluster-issuer.yaml
+  - resources/gateway-api.yaml
