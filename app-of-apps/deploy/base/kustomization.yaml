@@ -8,8 +8,11 @@ resources:
   - ./resources/istio-cni.yaml
   - ./resources/istio-ingressgateway.yaml
   - ./resources/istiod.yaml
+  - ./resources/jaeger-operator.yaml
+  - ./resources/kiali-operator.yaml
   - ./resources/kyverno.yaml
   - ./resources/metrics-server.yaml
   - ./resources/namespaces.yaml
   - ./resources/openebs.yaml
+  - ./resources/opentelemetry-operator.yaml
   - ./resources/ztunnel.yaml

@@ -1,0 +1,59 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kiali-operator
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+spec:
+  project: default
+  source:
+    chart: kiali-operator
+    repoURL: https://kiali.org/helm-charts
+    targetRevision: 2.*.*
+    helm:
+      releaseName: kiali-operator
+      valuesObject:
+        cr:
+          create: true
+          namespace: istio-system
+          spec:
+            auth:
+              strategy: anonymous
+            istio_namespace: istio-system
+            deployment:
+              cluster_wide_access: true
+            external_services:
+              grafana:
+                enabled: true
+                insecure_skip_verify: true
+                in_cluster_url: "http://prometheus-grafana.observability.svc.cluster.local"
+                url: "https://monitoring.infra.home.arpa"
+                dashboards:
+                  - name: "Istio Service Dashboard"
+                    variables:
+                      namespace: "var-namespace"
+                      service: "var-service"
+                  - name: "Istio Workload Dashboard"
+                    variables:
+                      namespace: "var-namespace"
+                      workload: "var-workload"
+                  - name: "Istio Mesh Dashboard"
+                  - name: "Istio Control Plane Dashboard"
+                  - name: "Istio Performance Dashboard"
+                  - name: "Istio Wasm Extension Dashboard"
+              tracing:
+                enabled: true
+                in_cluster_url: "http://jaeger-query.observability.svc.cluster.local:16685"
+                use_grpc: true
+              prometheus:
+                enabled: true
+                url: "http://prometheus-kube-prometheus-prometheus.observability.svc.cluster.local:9090"
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: kiali-operator
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - ServerSideApply=true

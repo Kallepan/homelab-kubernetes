@@ -3,5 +3,9 @@ kind: Kustomization
 
 resources:
   - ./resources/istio-system.yaml
+  - ./resources/jaeger-operator.yaml
+  - ./resources/kiali-operator.yaml
   - ./resources/kyverno.yaml
+  - ./resources/observability.yaml
   - ./resources/openebs.yaml
+  - ./resources/opentelemetry-operator.yaml
