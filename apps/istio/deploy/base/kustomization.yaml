@@ -8,5 +8,4 @@ resources:
   - ./resources/istio-cni.yaml
   - ./resources/istio-ingressgateway.yaml
   - ./resources/istiod.yaml
-  - ./resources/namespace.yaml
   - ./resources/ztunnel.yaml

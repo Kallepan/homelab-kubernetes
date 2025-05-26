@@ -8,7 +8,3 @@ resources:
   - ./resources/kiali-operator.yaml
   - ./resources/metrics-server.yaml
   - ./resources/opentelemetry-operator.yaml
-  - ./resources/namespaces/jaeger-operator.yaml
-  - ./resources/namespaces/kiali-operator.yaml
-  - ./resources/namespaces/observability.yaml
-  - ./resources/namespaces/opentelemetry-operator.yaml
