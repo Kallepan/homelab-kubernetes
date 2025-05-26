@@ -3,5 +3,4 @@ kind: Kustomization
 
 resources:
   - ./resources/kyverno.yaml
-  - ./resources/observability.yaml
   - ./resources/openebs.yaml
