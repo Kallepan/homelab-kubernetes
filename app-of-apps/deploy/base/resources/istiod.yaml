@@ -13,7 +13,7 @@ spec:
     helm:
       releaseName: istio
       valuesObject:
-        meshID: "infrastructure-cluster"
+        meshID: "infrastructure-cluster-mesh"
         meshConfig:
           extensionProviders:
             - name: "oauth2-proxy"
