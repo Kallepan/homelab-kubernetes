@@ -4,6 +4,6 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-  - ./resources/cert-manager.yaml
+  - ./resources/operators.yaml
   - ./resources/istio.yaml
   - ./resources/observability.yaml
