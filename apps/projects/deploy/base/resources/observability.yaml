@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: observability
+spec:  
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  sourceNamespaces:
+    - observability
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: observability
+      server: 'https://kubernetes.default.svc'
+    - namespace: opentelemetry-operator
+      server: 'https://kubernetes.default.svc'
+    - namespace: jaeger-operator
+      server: 'https://kubernetes.default.svc'
+    - namespace: kiali-operator
+      server: 'https://kubernetes.default.svc'
+    - namespace: kube-system
+      server: 'https://kubernetes.default.svc'
+    - namespace: istio-system
+      server: 'https://kubernetes.default.svc'

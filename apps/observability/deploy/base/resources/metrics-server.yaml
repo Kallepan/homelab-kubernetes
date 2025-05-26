@@ -5,7 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
-  project: default
+  project: observability
   source:
     chart: metrics-server
     repoURL: https://kubernetes-sigs.github.io/metrics-server
