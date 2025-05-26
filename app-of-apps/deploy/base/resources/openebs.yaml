@@ -27,7 +27,7 @@ spec:
             basePath: /var/mnt/storage/localpv-hostpath
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: kube-system
+    namespace: openebs
   syncPolicy:
     automated:
       prune: true
