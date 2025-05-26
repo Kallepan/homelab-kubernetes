@@ -1,7 +1,6 @@
 namespace: argocd
 
 resources:
-  - ./resources/cert-manager.yaml
   - ./resources/certificates.yaml
   - ./resources/cilium.yaml
   - ./resources/istio.yaml
@@ -9,4 +8,5 @@ resources:
   - ./resources/namespaces.yaml
   - ./resources/observability.yaml
   - ./resources/openebs.yaml
+  - ./resources/operators.yaml
   - ./resources/projects.yaml
