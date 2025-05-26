@@ -1,15 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: istio-config
-  annotations:
-    argocd.argoproj.io/sync-wave: "2"
+  name: istio-base
 spec:
   project: default
   source:
-    repoURL: "https://github.com/Kallepan/homelab-kubernetes.git"
-    targetRevision: main
-    path: apps/istio-config/deploy/base
+    chart: base
+    repoURL: https://istio-release.storage.googleapis.com/charts
+    targetRevision: 1.*.*
+    helm:
+      releaseName: istio-base
+      valuesObject:
+        defaultRevision: default
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: istio-system

@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: core-config
+  name: istio
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   project: default
   source:
     repoURL: "https://github.com/Kallepan/homelab-kubernetes.git"
     targetRevision: main
-    path: apps/core-config/deploy/base
+    path: apps/istio/deploy/base
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: kube-system
+    namespace: istio-system
   syncPolicy:
     automated:
       prune: true

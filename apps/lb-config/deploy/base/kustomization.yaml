@@ -6,4 +6,3 @@ namespace: kube-system
 
 resources:
   - resources/cilium-l2-announcement-policy.yaml
-  - resources/ingress-class.yaml
