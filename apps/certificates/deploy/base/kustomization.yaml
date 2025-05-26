@@ -4,5 +4,4 @@ kind: Kustomization
 namespace: cert-manager
 
 resources:
-  - ./applications/cert-manager.yaml
   - ./resources/cluster-issuer.yaml

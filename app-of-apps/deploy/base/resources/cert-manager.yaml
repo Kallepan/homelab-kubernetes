@@ -2,12 +2,18 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: cert-manager
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   project: default
   source:
-    repoURL: "https://github.com/Kallepan/homelab-kubernetes.git"
-    targetRevision: main
-    path: apps/cert-manager/deploy/base
+    chart: cert-manager
+    repoURL: https://charts.jetstack.io
+    targetRevision: 1.*.*
+    helm:
+      releaseName: cert-manager
+      valueFiles:
+        - ../values/cert-manager.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: cert-manager
