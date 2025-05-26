@@ -13,10 +13,25 @@ spec:
     helm:
       releaseName: istio
       valuesObject:
-        meshID: ""
+        meshID: "infrastructure-cluster"
         meshConfig:
-          extensionProviders: []
-          enableTracing: false
+          extensionProviders:
+            - name: "oauth2-proxy"
+              envoyExtAuthzHttp:
+                service: "oauth2-proxy.oauth2-proxy.svc.cluster.local"
+                port: 80
+                includeHeadersInCheck: ["cookie", "authorization"]
+                headersToDownstreamOnDeny: ["content-type", "set-cookie"]
+                headersToUpstreamOnAllow:
+                  [
+                    "x-forwarded-access-token",
+                    "authorization",
+                    "path",
+                    "x-auth-request-user",
+                    "x-auth-request-email",
+                    "x-auth-request-access-token",
+                  ]
+          enableTracing: true
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: istio-system
