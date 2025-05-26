@@ -3,5 +3,4 @@ kind: Kustomization
 
 namespace: istio-system
 
-resources:
-  - ./resources/cluster-issuer.yaml
+resources: []
