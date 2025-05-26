@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: "https://github.com/Kallepan/homelab-kubernetes.git"
     targetRevision: main
-    path: apps/cert-manager/deploy/base
+    path: apps/observability/deploy/base
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
