@@ -6,6 +6,3 @@ namespace: istio-system
 resources:
   - ./resources/namespace.yaml
   - ./resources/ingress-class.yaml
-  - ./resources/application-istio-base.yaml
-  - ./resources/application-istio-ingressgateway.yaml
-  - ./resources/application-istiod.yaml

@@ -3,5 +3,8 @@ namespace: argocd
 resources:
   - ./resources/cert-manager.yaml
   - ./resources/certificates.yaml
-  - ./resources/istio.yaml
-  - ./resources/lb-config.yaml
+  - ./resources/istio-base.yaml
+  - ./resources/istio-ingressgateway.yaml
+  - ./resources/istiod.yaml
+  - ./resources/istio-config.yaml
+  - ./resources/core-config.yaml
