@@ -8,6 +8,8 @@ spec:
       kind: '*'
   sourceNamespaces:
     - istio-system
+  sourceRepos:
+    - '*'
   destinations:
     - namespace: istio-system
       server: 'https://kubernetes.default.svc'
