@@ -7,5 +7,6 @@ resources:
   - ./resources/istio.yaml
   - ./resources/kyverno.yaml
   - ./resources/namespaces.yaml
+  - ./resources/observability.yaml
   - ./resources/openebs.yaml
   - ./resources/projects.yaml
