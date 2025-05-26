@@ -11,7 +11,7 @@ spec:
     helm:
       releaseName: istio
       valueFiles:
-        - ../values/istiod.yaml
+        - values/istiod.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: istio-system

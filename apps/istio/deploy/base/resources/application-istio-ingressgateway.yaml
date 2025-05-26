@@ -11,7 +11,7 @@ spec:
     helm:
       releaseName: istio-ingressgateway
       valueFiles:
-        - ../values/istio-ingressgateway.yaml
+        - values/istio-ingressgateway.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: istio-system
