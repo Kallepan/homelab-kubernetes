@@ -3,7 +3,7 @@ namespace: argocd
 resources:
   - ./resources/cert-manager.yaml
   - ./resources/certificates.yaml
-  - ./resources/core-infrastructure.yaml
+  - ./resources/cilium.yaml
   - ./resources/istio.yaml
   - ./resources/kyverno.yaml
   - ./resources/namespaces.yaml
