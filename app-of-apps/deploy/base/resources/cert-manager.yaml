@@ -7,17 +7,12 @@ metadata:
 spec:
   project: default
   source:
-    chart: cert-manager
-    repoURL: https://charts.jetstack.io
-    targetRevision: 1.*.*
-    helm:
-      releaseName: cert-manager
-      valuesObject:
-        crds:
-          enabled: true
+    repoURL: "https://github.com/Kallepan/homelab-kubernetes.git"
+    targetRevision: main
+    path: apps/cert-manager/deploy/base
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: cert-manager
+    namespace: default
   syncPolicy:
     automated:
       prune: true

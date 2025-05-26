@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: cert-manager
+spec:  
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  sourceNamespaces:
+    - cert-manager
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: cert-manager
+      server: 'https://kubernetes.default.svc'
