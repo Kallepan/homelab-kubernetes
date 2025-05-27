@@ -102,6 +102,9 @@ spec:
             size: 10Gi
             storageClass: openebs-hostpath
         read:
+          # TODO: Remove after fixing the issue with loki read extraArgs not being applied
+          extraArgs:
+            - -config.expand-env=true
           replicas: 2
           persistence:
             enabled: true
