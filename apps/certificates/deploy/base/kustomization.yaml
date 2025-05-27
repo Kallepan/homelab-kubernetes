@@ -7,4 +7,4 @@ resources:
   - ./resources/argocd.yaml
   - ./resources/cluster-issuer.yaml
   - ./resources/jaeger.yaml
-  - ./resources/obs.yaml
+  - ./resources/monitoring.yaml

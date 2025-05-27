@@ -8,5 +8,5 @@ spec:
     name: cluster-issuer
     kind: ClusterIssuer
   dnsNames:
-    - obs.infra.home.arpa
+    - monitoring.infra.home.arpa
     - alert.infra.home.arpa

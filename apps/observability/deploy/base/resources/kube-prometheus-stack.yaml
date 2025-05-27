@@ -158,11 +158,11 @@ spec:
             enabled: true
             ingressClassName: istio
             hosts:
-              - obs.infra.home.arpa
+              - monitoring.infra.home.arpa
             tls:
               - secretName: monitoring-tls
                 hosts:
-                  - obs.infra.home.arpa
+                  - monitoring.infra.home.arpa
           persistence:
             accessModes:
               - ReadWriteOnce
