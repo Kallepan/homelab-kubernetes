@@ -3,9 +3,9 @@ kind: Kustomization
 
 resources:
   - ./resources/keycloak-operator
+  - ./resources/opentelemetry-operator
   - ./resources/cnpg-operator.yaml
   - ./resources/cert-manager.yaml
   - ./resources/jaeger-operator.yaml
   - ./resources/kiali-operator.yaml
-  - ./resources/opentelemetry-operator.yaml
 

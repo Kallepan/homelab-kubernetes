@@ -1,0 +1,6 @@
+namespace: opentelemetry-operator
+
+resources:
+  - ./namespace.yaml
+  - ./subscription.yaml
+  - ./operator-group.yaml

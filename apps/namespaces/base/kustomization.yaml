@@ -9,5 +9,4 @@ resources:
   - ./resources/observability.yaml
   - ./resources/kiali-operator.yaml
   - ./resources/jaeger-operator.yaml
-  - ./resources/opentelemetry-operator.yaml
   - ./resources/cnpg-operator.yaml
