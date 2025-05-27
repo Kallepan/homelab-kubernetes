@@ -9,3 +9,4 @@ spec:
     kind: ClusterIssuer
   dnsNames:
     - obs.infra.home.arpa
+    - alert.infra.home.arpa
