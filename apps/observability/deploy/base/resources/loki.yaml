@@ -12,7 +12,6 @@ spec:
       releaseName: loki
       valuesObject:
         global:
-          dnsService: coredns
           extraArgs:
             - -config.expand-env=true
           extraEnvFrom:
