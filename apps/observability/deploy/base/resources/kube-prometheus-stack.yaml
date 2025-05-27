@@ -109,7 +109,7 @@ spec:
         defaultRules:
           create: true
         grafana:
-          adminUser: localadmin
+          adminUser: admin
           additionalDataSources:
             - access: proxy
               isDefault: false
