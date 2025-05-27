@@ -4,6 +4,12 @@ kind: Kustomization
 namespace: observability
 
 resources:
+  - ./resources/dashboards
+  - ./resources/jaeger.yaml
   - ./resources/loki.yaml
   - ./resources/prometheus-blackbox-exporter.yaml
   - ./resources/metrics-server.yaml
+  - ./resources/otel-cluster-rolebinding.yaml
+  - ./resources/otel-cluster-role.yaml
+  - ./resources/otel-collector-daemonset.yaml
+  - ./resources/otel-collector-deployment.yaml
