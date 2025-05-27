@@ -13,6 +13,8 @@ spec:
       valuesObject:
         global:
           dnsService: coredns
+          extraArgs:
+            - -config.expand-env=true
           extraEnvFrom:
             - secretRef:
                 name: loki-secrets
