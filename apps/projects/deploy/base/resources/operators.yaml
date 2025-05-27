@@ -7,10 +7,7 @@ spec:
     - group: '*'
       kind: '*'
   sourceNamespaces:
-    - cert-manager
-    - opentelemetry-operator
-    - jaeger-operator
-    - kiali-operator
+    - '*'
   sourceRepos:
     - '*'
   destinations:
@@ -27,4 +24,6 @@ spec:
     - namespace: istio-system
       server: 'https://kubernetes.default.svc'
     - namespace: keycloak
+      server: 'https://kubernetes.default.svc'
+    - namespace: cnpg-operator
       server: 'https://kubernetes.default.svc'
