@@ -5,7 +5,6 @@ resources:
   - ./resources/gitlab.yaml
   - ./resources/kyverno.yaml
   - ./resources/openebs.yaml
-  - ./resources/keycloak.yaml
   - ./resources/istio-system.yaml
   - ./resources/observability.yaml
   - ./resources/kiali-operator.yaml
