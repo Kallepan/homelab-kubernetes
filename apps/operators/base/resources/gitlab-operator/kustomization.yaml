@@ -1,5 +1,0 @@
-namespace: gitlab
-
-resources:
-  - ./namespace.yaml
-  - ./gitlab-operator.yaml
