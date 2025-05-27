@@ -204,7 +204,7 @@ spec:
                   - source_labels: [__param_target]
                     target_label: instance
                   - target_label: __address__
-                    replacement: blackbox-prometheus-blackbox-exporter.observability.svc.cluster.local:9115
+                    replacement: prometheus-blackbox-exporter.observability.svc.cluster.local:9115
               - job_name: blackbox_http_auth
                 metrics_path: /probe
                 params:
@@ -219,7 +219,7 @@ spec:
                   - source_labels: [__param_target]
                     target_label: instance
                   - target_label: __address__
-                    replacement: blackbox-prometheus-blackbox-exporter.observability.svc.cluster.local:9115
+                    replacement: prometheus-blackbox-exporter.observability.svc.cluster.local:9115
               - job_name: istiod
                 kubernetes_sd_configs:
                   - role: endpoints
