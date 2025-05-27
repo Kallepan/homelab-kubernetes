@@ -109,7 +109,7 @@ spec:
         defaultRules:
           create: true
         grafana:
-          adminUser: administator
+          adminUser: localadmin
           additionalDataSources:
             - access: proxy
               isDefault: false
@@ -125,35 +125,35 @@ spec:
               type: jaeger
               url: http://jaeger-query.observability.svc.cluster.local:16686
           enabled: true
-          extraSecretMounts:
-            - name: grafana-generic-oauth-secret-mount
-              defaultMode: 0440
-              secretName: grafana-generic-oauth-secret
-              mountPath: /etc/secrets/auth_generic_oauth
-              readOnly: true
+          # extraSecretMounts:
+          #   - name: grafana-generic-oauth-secret-mount
+          #     defaultMode: 0440
+          #     secretName: grafana-generic-oauth-secret
+          #     mountPath: /etc/secrets/auth_generic_oauth
+          #     readOnly: true
           grafana.ini:
             server:
               root_url: https://monitoring.infra.home.arpa
             auth.anonymous:
               enabled: true
-            auth.generic_oauth:
-              tls_skip_verify_insecure: true
-              auto_login: false
-              allow_assign_grafana_admin: true
-              allow_sign_up: true
-              api_url: https://sso.infra.home.arpa/realms/homelab/protocol/openid-connect/userinfo
-              auth_url: https://sso.infra.home.arpa/realms/homelab/protocol/openid-connect/auth
-              token_url: https://sso.infra.home.arpa/realms/homelab/protocol/openid-connect/token
-              client_id: $__file{/etc/secrets/auth_generic_oauth/client_id}
-              client_secret: $__file{/etc/secrets/auth_generic_oauth/client_secret}
-              enabled: true
-              email_attribute_path: email
-              login_attribute_path: preferred_username
-              name_attribute_path: name
-              name: Keycloak-OAuth
-              role_attribute_path: contains(roles[*], 'admin') && 'Admin' || contains(roles[*], 'editor') && 'Editor' || 'Viewer'
-              scopes: openid email profile offline_access roles
-              skip_org_role_sync: false
+            # auth.generic_oauth:
+            #   tls_skip_verify_insecure: true
+            #   auto_login: false
+            #   allow_assign_grafana_admin: true
+            #   allow_sign_up: true
+            #   api_url: https://sso.infra.home.arpa/realms/homelab/protocol/openid-connect/userinfo
+            #   auth_url: https://sso.infra.home.arpa/realms/homelab/protocol/openid-connect/auth
+            #   token_url: https://sso.infra.home.arpa/realms/homelab/protocol/openid-connect/token
+            #   client_id: $__file{/etc/secrets/auth_generic_oauth/client_id}
+            #   client_secret: $__file{/etc/secrets/auth_generic_oauth/client_secret}
+            #   enabled: true
+            #   email_attribute_path: email
+            #   login_attribute_path: preferred_username
+            #   name_attribute_path: name
+            #   name: Keycloak-OAuth
+            #   role_attribute_path: contains(roles[*], 'admin') && 'Admin' || contains(roles[*], 'editor') && 'Editor' || 'Viewer'
+            #   scopes: openid email profile offline_access roles
+            #   skip_org_role_sync: false
           ingress:
             enabled: true
             ingressClassName: istio

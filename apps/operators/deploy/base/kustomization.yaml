@@ -6,3 +6,4 @@ resources:
   - ./resources/jaeger-operator.yaml
   - ./resources/kiali-operator.yaml
   - ./resources/opentelemetry-operator.yaml
+  - ./

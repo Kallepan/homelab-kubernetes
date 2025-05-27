@@ -8,3 +8,4 @@ resources:
   - ./resources/cluster-issuer.yaml
   - ./resources/jaeger.yaml
   - ./resources/monitoring.yaml
+  - ./resources/keycloak.yaml
