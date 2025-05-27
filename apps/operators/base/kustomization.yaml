@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - ./resources/keycloak-operator
+  - ./resources/gitlab-operator
   - ./resources/cnpg-operator.yaml
   - ./resources/cert-manager.yaml
   - ./resources/jaeger-operator.yaml
