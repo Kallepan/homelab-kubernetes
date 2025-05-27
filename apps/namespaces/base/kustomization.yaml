@@ -8,7 +8,6 @@ resources:
   - ./resources/keycloak.yaml
   - ./resources/istio-system.yaml
   - ./resources/observability.yaml
-  - ./resources/olm.yaml
   - ./resources/kiali-operator.yaml
   - ./resources/jaeger-operator.yaml
   - ./resources/opentelemetry-operator.yaml
