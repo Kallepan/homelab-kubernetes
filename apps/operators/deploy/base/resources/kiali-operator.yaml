@@ -4,7 +4,7 @@ metadata:
   name: kiali-operator
   namespace: observability
 spec:
-  project: observability
+  project: operators
   source:
     chart: kiali-operator
     repoURL: https://kiali.org/helm-charts

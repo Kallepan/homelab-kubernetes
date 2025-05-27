@@ -4,7 +4,7 @@ metadata:
   name: jaeger-operator
   namespace: observability
 spec:
-  project: observability
+  project: operators
   source:
     chart: jaeger-operator
     repoURL: https://jaegertracing.github.io/helm-charts

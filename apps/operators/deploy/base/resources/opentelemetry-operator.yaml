@@ -4,7 +4,7 @@ metadata:
   name: opentelemetry-operator
   namespace: observability
 spec:
-  project: observability
+  project: operators
   source:
     chart: opentelemetry-operator
     repoURL: https://open-telemetry.github.io/opentelemetry-helm-charts
