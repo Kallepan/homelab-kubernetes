@@ -6,6 +6,7 @@ namespace: observability
 resources:
   - ./resources/dashboards
   - ./resources/jaeger.yaml
+  - ./resources/kube-prometheus-stack.yaml
   - ./resources/loki.yaml
   - ./resources/prometheus-blackbox-exporter.yaml
   - ./resources/metrics-server.yaml
