@@ -132,6 +132,9 @@ spec:
               mountPath: /etc/secrets/auth_generic_oauth
               readOnly: true
           grafana.ini:
+            log:
+              mode: console
+              level: debug
             server:
               root_url: https://monitoring.infra.home.arpa
             auth.anonymous:
