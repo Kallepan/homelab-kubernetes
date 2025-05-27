@@ -1,6 +1,5 @@
 namespace: keycloak
 
 resources:
-  - ./namespace.yaml
   - ./subscription.yaml
   - ./operator-group.yaml
