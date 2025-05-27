@@ -1,0 +1,7 @@
+namespace: gitlab
+
+resources:
+  - ./resources/registry-postgresql.yaml
+  - ./resources/registry-scheduled-backup.yaml
+  - ./resources/gitlab-postgresql.yaml
+  - ./resources/gitlab-scheduled-backup.yaml
