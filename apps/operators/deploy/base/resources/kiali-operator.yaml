@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kiali-operator
-  namespace: observability
+  namespace: kiali-operator
 spec:
   project: operators
   source:

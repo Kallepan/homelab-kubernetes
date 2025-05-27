@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: jaeger-operator
-  namespace: observability
+  namespace: jaeger-operator
 spec:
   project: operators
   source:

@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: opentelemetry-operator
-  namespace: observability
+  namespace: opentelemetry-operator
 spec:
   project: operators
   source:
