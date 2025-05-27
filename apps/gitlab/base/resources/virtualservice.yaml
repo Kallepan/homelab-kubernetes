@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: gitlab-ssh-virtual-service
+  namespace: gitlab
+spec:
+  gateways:
+    - gitlab-ssh-gateway
+  hosts:
+    - gitlab.infra.home.arpa
+  tcp:
+    - match:
+        - port: 2222
+      route:
+        - destination:
+            host: gitlab-gitlab-shell.gitlab.svc.cluster.local
+            port:
+              number: 2222

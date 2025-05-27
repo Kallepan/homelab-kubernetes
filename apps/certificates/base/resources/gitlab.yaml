@@ -1,0 +1,17 @@
+# GitLab certificate
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: gitlab-tls
+  namespace: istio-system
+spec:
+  secretName: gitlab-tls
+  issuerRef:
+    name: cluster-issuer
+    kind: ClusterIssuer
+  dnsNames:
+    - "gitlab.infra.home.arpa"
+    - "kas.infra.home.arpa"
+    - "registry.infra.home.arpa"
+    - "*.pages.infra.home.arpa"
+    - "pages.infra.home.arpa"

@@ -5,3 +5,5 @@ resources:
   - ./resources/registry-scheduled-backup.yaml
   - ./resources/gitlab-postgresql.yaml
   - ./resources/gitlab-scheduled-backup.yaml
+  - ./resources/gateway.yaml
+  - ./resources/virtualservice.yaml
