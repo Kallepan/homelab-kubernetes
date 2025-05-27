@@ -8,6 +8,7 @@ resources:
   - ./resources/kyverno.yaml
   - ./resources/namespaces.yaml
   - ./resources/observability.yaml
+  - ./resources/olm.yaml
   - ./resources/openebs.yaml
   - ./resources/operators.yaml
   - ./resources/projects.yaml

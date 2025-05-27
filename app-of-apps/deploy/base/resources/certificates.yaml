@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: "https://github.com/Kallepan/homelab-kubernetes.git"
     targetRevision: main
-    path: apps/certificates/deploy/base
+    path: apps/certificates/base
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: istio-system
