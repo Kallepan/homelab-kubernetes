@@ -4,6 +4,7 @@ resources:
   - ./resources/certificates.yaml
   - ./resources/cilium.yaml
   - ./resources/istio.yaml
+  - ./resources/keycloak.yaml
   - ./resources/kyverno.yaml
   - ./resources/namespaces.yaml
   - ./resources/observability.yaml

@@ -1,0 +1,11 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: ScheduledBackup
+metadata:
+  name: keycloak-postgres-backup
+spec:
+  immediate: true
+  backupOwnerReference: self
+  cluster:
+    name: keycloak-postgres
+  method: barmanObjectStore
+  schedule: "0 0 23 * * SUN"
