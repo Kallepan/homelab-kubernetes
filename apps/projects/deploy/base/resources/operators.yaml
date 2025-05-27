@@ -1,14 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: cert-manager
+  name: operators
 spec:  
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'
   sourceNamespaces:
     - cert-manager
-    - observability
+    - opentelemetry-operator
+    - jaeger-operator
+    - kiali-operator
   sourceRepos:
     - '*'
   destinations:
