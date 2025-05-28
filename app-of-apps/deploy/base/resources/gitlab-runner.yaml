@@ -55,7 +55,7 @@ spec:
                 read_only = true
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: gitlab-runner
+    namespace: gitlab-runners
   syncPolicy:
     automated:
       prune: true
