@@ -193,7 +193,7 @@ spec:
                       # Network Health
                       - https://google.com
                       # Core Cluster
-                      - https://gitlab.infra.home.arpa/users/sign_in?auto_sign_in=false
+                      - https://gitlab.infra.home.arpa/-/liveness?token=p-r6qd7Cxf-VH-zs-CZY
                       - https://vault.infra.home.arpa
                       - https://sso.infra.home.arpa
                       # Production Cluster
