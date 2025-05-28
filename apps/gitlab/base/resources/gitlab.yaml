@@ -17,6 +17,11 @@ spec:
       gitlab-runner:
         install: false
       gitlab:
+        gitaly:
+          persistence:
+            enabled: true
+            size: 50Gi
+            storageClass: openebs-hostpath
         gitlab-shell:
           sshDaemon: gitlab-sshd
           config:
@@ -102,10 +107,6 @@ spec:
         edition: ee
         gitaly:
           enabled: true
-          persistence:
-            enabled: true
-            size: 50Gi
-            storageClass: openebs-hostpath
         psql:
           serviceName: gitlab-postgres-rw
           port: 5432
