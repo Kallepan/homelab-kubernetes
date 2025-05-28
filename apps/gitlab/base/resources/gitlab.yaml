@@ -114,7 +114,7 @@ spec:
           username: app
           password:
             useSecret: true
-            secret: gitlab-postgres-app
+            secret: gitlab-postgresql-app
             key: password
         hosts:
           domain: infra.home.arpa
@@ -182,7 +182,7 @@ spec:
           user: app
           name: app
           password:
-            secret: gitlab-registry-postgres-app
+            secret: gitlab-registry-postgresql-app
             key: password
           migrations:
             enabled: true
