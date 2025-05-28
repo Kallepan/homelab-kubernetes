@@ -51,6 +51,7 @@ spec:
             enabled: true
             size: "10Gi"
             accessMode: ReadWriteOnce
+            storageClass: openebs-hostpath
         webservice:
           monitoring:
             ipWhitelist:
@@ -167,7 +168,8 @@ spec:
         install: true
         metrics:
           enabled: true
-        defaultStorageClass: openebs-hostpath
+        global:
+          defaultStorageClass: openebs-hostpath
       registry:
         storage:
           secret: gitlab-registry-minio-connection
