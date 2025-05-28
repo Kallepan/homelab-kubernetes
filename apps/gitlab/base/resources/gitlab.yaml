@@ -169,7 +169,7 @@ spec:
         metrics:
           enabled: true
         global:
-          defaultStorageClass: openebs-hostpath
+          storageClass: openebs-hostpath
       registry:
         storage:
           secret: gitlab-registry-minio-connection
