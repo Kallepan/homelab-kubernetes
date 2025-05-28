@@ -108,7 +108,7 @@ spec:
         gitaly:
           enabled: true
         psql:
-          serviceName: gitlab-postgres-rw
+          serviceName: gitlab-postgresql-rw
           port: 5432
           database: app
           username: app
@@ -177,7 +177,7 @@ spec:
           key: registry.s3.yml
         database:
           enabled: true
-          host: gitlab-registry-postgres-rw
+          host: gitlab-registry-postgresql-rw
           port: 5432
           user: app
           name: app
