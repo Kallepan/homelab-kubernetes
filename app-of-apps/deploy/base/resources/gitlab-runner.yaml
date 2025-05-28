@@ -34,6 +34,7 @@ spec:
               """
 
               [runners.kubernetes]
+                allowed_pull_policies = ["always", "if-not-present"]
                 image = "alpine:latest"
               [runners.cache]
                 Type = "s3"
