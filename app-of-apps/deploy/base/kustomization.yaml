@@ -3,6 +3,7 @@ namespace: argocd
 resources:
   - ./resources/certificates.yaml
   - ./resources/cilium.yaml
+  - ./resources/gitlab-runner.yaml
   - ./resources/gitlab.yaml
   - ./resources/istio.yaml
   - ./resources/keycloak.yaml
