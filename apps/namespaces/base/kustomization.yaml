@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - ./resources/gitlab.yaml
+  - ./resources/gitlab-runner.yaml
   - ./resources/kyverno.yaml
   - ./resources/keycloak.yaml
   - ./resources/openebs.yaml
