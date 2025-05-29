@@ -14,3 +14,4 @@ resources:
   - ./resources/openebs.yaml
   - ./resources/operators.yaml
   - ./resources/projects.yaml
+  - ./resources/vault.yaml
