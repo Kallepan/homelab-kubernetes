@@ -45,6 +45,7 @@ spec:
                 enabled: true
                 accessMode: ReadWriteOnce
                 size: 10Gi
+                storageClass: openebs-hostpath
               extraArgs: --skip db --skip artifacts
             objectStorage:
               backend: s3
