@@ -14,3 +14,4 @@ resources:
   - ./resources/jaeger-operator.yaml
   - ./resources/opentelemetry-operator.yaml
   - ./resources/cnpg-operator.yaml
+  - ./resources/vault.yaml

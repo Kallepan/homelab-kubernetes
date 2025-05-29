@@ -10,3 +10,4 @@ resources:
   - ./resources/jaeger.yaml
   - ./resources/monitoring.yaml
   - ./resources/keycloak.yaml
+  - ./resources/vault.yaml
