@@ -196,8 +196,8 @@ spec:
                       - https://gitlab.infra.home.arpa/-/liveness?token=p-r6qd7Cxf-VH-zs-CZY
                       - https://vault.infra.home.arpa
                       - https://sso.infra.home.arpa
-                      # Production Cluster
-                      - https://homepage.svc.home.arpa
+                      # Rancher
+                      - https://rancher.home.arpa
                 relabel_configs:
                   - source_labels: [__address__]
                     target_label: __param_target
