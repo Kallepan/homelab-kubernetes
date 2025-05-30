@@ -15,6 +15,38 @@ spec:
       valuesObject:
         crds:
           enabled: true
+        admissionController:
+          metricsService:
+            create: true
+          serviceMonitor:
+            enabled: true
+            additionalLabels:
+              release: kube-prometheus-stack
+
+        backgroundController:
+          metricsService:
+            create: true
+          serviceMonitor:
+            enabled: true
+            additionalLabels:
+              release: kube-prometheus-stack
+
+        reportsController:
+          metricsService:
+            create: true
+          serviceMonitor:
+            enabled: true
+            additionalLabels:
+              release: kube-prometheus-stack
+
+        cleanupController:
+          enabled: true
+          metricsService:
+            create: true
+          serviceMonitor:
+            enabled: true
+            additionalLabels:
+              release: kube-prometheus-stack
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: kyverno
