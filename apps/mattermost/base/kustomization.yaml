@@ -8,3 +8,5 @@ resources:
   - resources/virtualservice.yaml
   - resources/persistent-volume-claim.yaml
   - resources/postgresql.yaml
+  - resources/scheduled-backup.yaml
+  - resources/mattermost.yaml
