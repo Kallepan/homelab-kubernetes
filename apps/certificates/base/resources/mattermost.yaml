@@ -10,3 +10,4 @@ spec:
     kind: ClusterIssuer
   dnsNames:
     - mattermost.infra.home.arpa
+    - chat.infra.home.arpa

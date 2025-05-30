@@ -1,0 +1,11 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: ScheduledBackup
+metadata:
+  name: mattermost-postgresql-backup
+spec:
+  immediate: true
+  backupOwnerReference: self
+  cluster:
+    name: mattermost-postgresql
+  method: barmanObjectStore
+  schedule: "0 0 23 * * SUN"
