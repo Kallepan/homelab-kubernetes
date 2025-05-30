@@ -73,12 +73,10 @@ spec:
               - name: "mattermost-logging-receiver"
                 slack_configs:
                   - api_url_file: /etc/alertmanager/secrets/alertmanager-mattermost-webhook-url/mattermost-webhook-url
-                    username: alert_bot
                     send_resolved: true
               - name: "mattermost-metrics-receiver"
                 slack_configs:
                   - api_url_file: /etc/alertmanager/secrets/alertmanager-mattermost-webhook-url/mattermost-webhook-url
-                    username: alert_bot
                     send_resolved: true
               - name: "null"
             templates:
