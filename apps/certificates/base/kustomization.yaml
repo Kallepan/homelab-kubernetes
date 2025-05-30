@@ -8,6 +8,7 @@ resources:
   - ./resources/cluster-issuer.yaml
   - ./resources/gitlab.yaml
   - ./resources/jaeger.yaml
-  - ./resources/monitoring.yaml
   - ./resources/keycloak.yaml
+  - ./resources/mattermost.yaml
+  - ./resources/monitoring.yaml
   - ./resources/vault.yaml
