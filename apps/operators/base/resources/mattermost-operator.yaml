@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mattermost-operator
+  namespace: mattermost-operator
+spec:
+  project: operators
+  source:
+    chart: mattermost-operator
+    repoURL: https://helm.mattermost.com
+    targetRevision: 1.*.*
+    helm:
+      releaseName: mattermost-operator
+      valuesObject: {}
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: mattermost-operator
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - ServerSideApply=true
