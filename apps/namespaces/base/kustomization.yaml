@@ -8,7 +8,6 @@ resources:
   - ./resources/kyverno.yaml
   - ./resources/keycloak.yaml
   - ./resources/openebs.yaml
-  - ./resources/homepage.yaml
   - ./resources/istio-system.yaml
   - ./resources/observability.yaml
   - ./resources/kiali-operator.yaml

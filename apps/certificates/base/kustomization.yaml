@@ -7,7 +7,6 @@ resources:
   - ./resources/argocd.yaml
   - ./resources/cluster-issuer.yaml
   - ./resources/gitlab.yaml
-  - ./resources/homepage.yaml
   - ./resources/jaeger.yaml
   - ./resources/keycloak.yaml
   - ./resources/mattermost.yaml
