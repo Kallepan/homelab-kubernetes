@@ -5,6 +5,7 @@ namespace: observability
 
 resources:
   - ./resources/dashboards
+  - ./resources/kiali
   - ./resources/jaeger.yaml
   - ./resources/kube-prometheus-stack.yaml
   - ./resources/loki.yaml
