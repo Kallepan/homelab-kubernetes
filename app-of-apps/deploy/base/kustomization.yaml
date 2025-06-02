@@ -5,7 +5,6 @@ resources:
   - ./resources/cilium.yaml
   - ./resources/gitlab-runner.yaml
   - ./resources/gitlab.yaml
-  - ./resources/homepage.yaml
   - ./resources/istio.yaml
   - ./resources/keycloak.yaml
   - ./resources/kyverno.yaml
