@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: homepage
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/Kallepan/homelab-kubernetes.git"
+    targetRevision: main
+    path: apps/homepage/base
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: homepage
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

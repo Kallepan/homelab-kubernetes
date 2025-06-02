@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: homepage
+
+resources:
+  - ./resources/cluster-role-binding.yaml
+  - ./resources/cluster-role.yaml
+  - ./resources/service-account.yaml
+  # - ./resources/deployment.yaml
+  # - ./resources/service.yaml
+  # - ./resources/gateway.yaml
+  # - ./resources/virtualservice.yaml
+  # - ./resources/configmap.yaml

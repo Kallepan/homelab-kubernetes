@@ -2,11 +2,11 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: jaeger-tls
+  name: homepage-tls
 spec:
-  secretName: jaeger-tls
+  secretName: homepage-tls
   issuerRef:
     name: cluster-issuer
     kind: ClusterIssuer
   dnsNames:
-    - jaeger.infra.home.arpa
+    - homepage.infra.home.arpa
