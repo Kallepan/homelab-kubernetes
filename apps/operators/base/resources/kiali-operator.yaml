@@ -25,7 +25,7 @@ spec:
               grafana:
                 enabled: true
                 insecure_skip_verify: true
-                in_cluster_url: "http://prometheus-grafana.observability.svc.cluster.local"
+                in_cluster_url: "http://kube-prometheus-stack-grafana.observability.svc.cluster.local"
                 url: "https://monitoring.infra.home.arpa"
                 dashboards:
                   - name: "Istio Service Dashboard"
@@ -46,7 +46,7 @@ spec:
                 use_grpc: true
               prometheus:
                 enabled: true
-                url: "http://prometheus-kube-prometheus-prometheus.observability.svc.cluster.local:9090"
+                url: "http://kube-prometheus-stack-prometheus.observability.svc.cluster.local:9090"
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: kiali-operator

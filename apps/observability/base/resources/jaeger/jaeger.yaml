@@ -13,11 +13,4 @@ spec:
       memory:
         max-traces: 100000
   ingress:
-    enabled: true
-    ingressClassName: istio
-    hosts:
-      - jaeger.infra.home.arpa
-    tls:
-      - secretName: jaeger-tls
-        hosts:
-          - jaeger.infra.home.arpa
+    enabled: false

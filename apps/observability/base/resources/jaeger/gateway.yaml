@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1beta1
 kind: Gateway
 metadata:
-  name: gateway-kiali
+  name: gateway-jaeger
 spec:
   selector:
     app: istio-ingressgateway
@@ -14,13 +14,13 @@ spec:
       tls:
         httpsRedirect: true
       hosts:
-        - kiali.infra.home.arpa
+        - jaeger.infra.home.arpa
     - port:
         number: 443
         name: https
         protocol: HTTPS
       tls:
         mode: SIMPLE
-        credentialName: kiali-tls
+        credentialName: jaeger-tls
       hosts:
-        - kiali.infra.home.arpa
+        - jaeger.infra.home.arpa

@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: virtualservice-jaeger
+spec:
+  hosts:
+    - jaeger.infra.home.arpa
+  gateways:
+    - gateway-jaeger
+  http:
+    - match:
+        - uri:
+            prefix: /
+      route:
+        - destination:
+            host: jaeger-query.observability.svc.cluster.local
+            port:
+              number: 16686
