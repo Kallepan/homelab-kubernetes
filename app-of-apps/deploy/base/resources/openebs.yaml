@@ -13,6 +13,8 @@ spec:
     helm:
       releaseName: openebs
       valuesObject:
+        loki:
+          enabled: false
         engines:
           local:
             lvm:
