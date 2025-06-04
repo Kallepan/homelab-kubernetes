@@ -13,6 +13,8 @@ spec:
     helm:
       releaseName: openebs
       valuesObject:
+        alloy:
+          enabled: false
         loki:
           enabled: false
         engines:
