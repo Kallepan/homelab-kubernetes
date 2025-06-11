@@ -41,7 +41,7 @@ spec:
                 "container.apparmor.security.beta.kubernetes.io/buildkitd" = "unconfined"
                 "container.seccomp.security.alpha.kubernetes.io/buildkitd" = "unconfined"
               [runners.cache]
-                Type = "s3"∫
+                Type = "s3"
                 Shared = true
                 Path = "runner"
                 [runners.cache.s3]
