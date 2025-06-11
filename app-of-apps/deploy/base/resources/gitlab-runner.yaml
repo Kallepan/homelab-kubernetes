@@ -38,8 +38,8 @@ spec:
                 pull_policy = "if-not-present"
                 image = "alpine:latest"
               [runners.kubernetes.pod_annotations]
-                "container.apparmor.security.beta.kubernetes.io/buildkitd" = unconfined
-                "container.seccomp.security.alpha.kubernetes.io/buildkitd" = unconfined
+                "container.apparmor.security.beta.kubernetes.io/buildkitd" = "unconfined"
+                "container.seccomp.security.alpha.kubernetes.io/buildkitd" = "unconfined"
               [runners.cache]
                 Type = "s3"∫
                 Shared = true
