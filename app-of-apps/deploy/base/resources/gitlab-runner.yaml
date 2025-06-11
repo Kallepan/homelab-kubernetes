@@ -37,8 +37,11 @@ spec:
                 allowed_pull_policies = ["always", "if-not-present"]
                 pull_policy = "if-not-present"
                 image = "alpine:latest"
+              [runners.kubernetes.pod_annotations]
+                container.apparmor.security.beta.kubernetes.io/buildkitd = unconfined
+                container.seccomp.security.alpha.kubernetes.io/buildkitd = unconfined
               [runners.cache]
-                Type = "s3"
+                Type = "s3"∫
                 Shared = true
                 Path = "runner"
                 [runners.cache.s3]
