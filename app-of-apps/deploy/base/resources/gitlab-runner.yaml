@@ -37,6 +37,7 @@ spec:
                 allowed_pull_policies = ["always", "if-not-present"]
                 pull_policy = "if-not-present"
                 image = "alpine:latest"
+                pod_annotations_overwrite_allowed = "container.apparmor.security.beta.kubernetes/.*"
               [runners.cache]
                 Type = "s3"
                 Shared = true
