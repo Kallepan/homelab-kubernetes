@@ -37,6 +37,7 @@ spec:
                 allowed_pull_policies = ["always", "if-not-present"]
                 pull_policy = "if-not-present"
                 image = "alpine:latest"
+                privileged = true
               [runners.cache]
                 Type = "s3"
                 Shared = true
