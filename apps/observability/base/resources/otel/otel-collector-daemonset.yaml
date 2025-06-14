@@ -82,7 +82,7 @@ spec:
       resource:
         attributes:
           - key: cluster
-            value: "service"
+            value: "infrastructure"
             action: upsert
 
     exporters:

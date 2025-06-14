@@ -8,10 +8,7 @@ resources:
   - ./resources/kiali
   - ./resources/jaeger
   - ./resources/loki
+  - ./resources/otel
   - ./resources/kube-prometheus-stack.yaml
   - ./resources/prometheus-blackbox-exporter.yaml
   - ./resources/metrics-server.yaml
-  - ./resources/otel-cluster-role-binding.yaml
-  - ./resources/otel-cluster-role.yaml
-  - ./resources/otel-collector-daemonset.yaml
-  - ./resources/otel-collector-deployment.yaml
