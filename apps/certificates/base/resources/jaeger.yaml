@@ -10,3 +10,4 @@ spec:
     kind: ClusterIssuer
   dnsNames:
     - jaeger.infra.home.arpa
+    - jaeger-collector.infra.home.arpa

@@ -5,6 +5,7 @@ metadata:
 spec:
   hosts:
     - jaeger.infra.home.arpa
+    - jaeger-collector.infra.home.arpa
   gateways:
     - gateway-jaeger
   http:
@@ -16,3 +17,11 @@ spec:
             host: jaeger-query.observability.svc.cluster.local
             port:
               number: 16686
+    - match:
+        - uri:
+            prefix: /collector
+      route:
+        - destination:
+            host: jaeger-collector.observability.svc.cluster.local
+            port:
+              number: 4317

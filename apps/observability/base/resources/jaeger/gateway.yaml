@@ -15,6 +15,7 @@ spec:
         httpsRedirect: true
       hosts:
         - jaeger.infra.home.arpa
+        - jaeger-collector.infra.home.arpa
     - port:
         number: 443
         name: https
@@ -24,3 +25,4 @@ spec:
         credentialName: jaeger-tls
       hosts:
         - jaeger.infra.home.arpa
+        - jaeger-collector.infra.home.arpa
