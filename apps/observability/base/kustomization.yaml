@@ -9,6 +9,7 @@ resources:
   - ./resources/jaeger
   - ./resources/loki
   - ./resources/otel
+  - ./resources/prometheus
   - ./resources/kube-prometheus-stack.yaml
   - ./resources/prometheus-blackbox-exporter.yaml
   - ./resources/metrics-server.yaml
