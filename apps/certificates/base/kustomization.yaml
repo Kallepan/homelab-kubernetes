@@ -11,5 +11,6 @@ resources:
   - ./resources/keycloak.yaml
   - ./resources/kiali.yaml
   - ./resources/mattermost.yaml
+  - ./resources/loki.yaml
   - ./resources/monitoring.yaml
   - ./resources/vault.yaml
