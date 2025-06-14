@@ -20,6 +20,8 @@ spec:
     - match:
         - uri:
             prefix: /collector
+      rewrite:
+        uri: /
       route:
         - destination:
             host: jaeger-collector.observability.svc.cluster.local

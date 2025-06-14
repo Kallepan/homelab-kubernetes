@@ -13,4 +13,5 @@ resources:
   - ./resources/mattermost.yaml
   - ./resources/loki.yaml
   - ./resources/monitoring.yaml
+  - ./resources/prometheus.yaml
   - ./resources/vault.yaml
