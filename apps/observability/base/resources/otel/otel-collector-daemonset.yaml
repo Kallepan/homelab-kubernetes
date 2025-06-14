@@ -92,7 +92,7 @@ spec:
         tls:
           insecure: true
       otlphttp/metrics:
-        endpoint: "http://prometheus-kube-prometheus-prometheus.observability.svc.cluster.local:9090/api/v1/otlp"
+        endpoint: "http://kube-prometheus-stack-prometheus.observability.svc.cluster.local:9090/api/v1/otlp"
         tls:
           insecure: true
       otlp/traces:
